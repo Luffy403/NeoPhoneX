@@ -1,0 +1,18 @@
+.footer{
+    padding: 20px;
+    border: 1px solid #e3ecff;
+}
+/* Мобильная адаптация для футер */
+@media(max-width:768px){
+    .footer{
+        padding: 15px;
+    }
+    .footer__copy, .footer__tagline{
+        font-size: 15px;
+    }
+}
+@media(max-width:650px){
+    .footer__tagline{
+        display: none;
+    }
+}
