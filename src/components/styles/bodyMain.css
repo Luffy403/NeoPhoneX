@@ -22,6 +22,7 @@
 .hero__subtitle{
     margin-bottom:  24px;
     color: #546679;
+    line-height: 25px;
 }
 .hero__actions{
     display: flex;
@@ -133,7 +134,6 @@
         font-size: 20px;
     }
 }
-
 @media(max-width: 650px){
     .hero__container{
         padding: 56px 25px;
@@ -171,10 +171,11 @@
     .hero__container{
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         gap: 50px;
     }
     .hero__copy{
-        max-width: 230px;
+        max-width: 300px;
     }
     .hero__text{
         font-size: 33px;
@@ -193,38 +194,81 @@
         height: 48px;
     }
 }
-
 @media(max-width: 490px){
+    .hero__text{
+        font-size: 33px;
+    }
+    .hero__phone{
+        width: 230px;
+        height: 530px;
+        border: 10px solid #fff;
+    }
+    .lock__time{
+        font-size: 48px;
+    }
+    .lock__btn{
+        font-size: 18px;
+        width: 48px;
+        height: 48px;
+    }
+}
+@media(max-width: 450px){
+    .hero__container{
+        gap: 35px;
+    }
+    .hero__copy{
+        max-width: 250px;
+    }
+    .hero__text{
+        font-size: 28px;
+    }
+    .hero__subtitle{
+        margin-bottom: 18px;
+        font-size: 15px;
+    }
+    .hero__phone{
+        height: 450px;
+        border: 8px solid #fff;
+        padding: 15px 0;
+    }
+    .phone__back{
+        padding: 30px 0;
+        border-radius: 25px;
+    }
+    .lock__time{
+        font-size: 40px;
+    }
+}
+@media (max-width: 390px){
+    .hero__container{
+        gap: 30px;
+    }
     .hero__copy{
         max-width: 230px;
     }
     .hero__text{
-        font-size: 33px;
+        font-size: 25px;
+    }
+    .hero__subtitle{
+        line-height: 23px;
     }
     .hero__phone{
-        width: 230px;
-        height: 530px;
-        border: 10px solid #fff;
-    }
-    .lock__time{
-        font-size: 48px;
-    }
-    .lock__btn{
-        font-size: 18px;
-        width: 48px;
-        height: 48px;
-    }
-}
-@media(max-width: 490px){
-    .hero__container{
-        gap: 35px;
-    }
-    .hero__phone{
-        height: 500px;
-        border: 8px solid #fff;
+        height: 430px;
+        border: 6px solid #fff;
     }
     .phone__back{
-        padding: 40px 0;
+        padding: 25px 0;
+    }
+    .lock__time{
+        font-size: 37px;
+    }
+    .lock__date{
+        font-size: 14px;
+    }
+    .lock__btn{
+        font-size: 17px;
+        width: 45px;
+        height: 45px;
     }
 }
 /* 2 секция*/
@@ -273,7 +317,6 @@
         font-size: 15px;
     }
 }
-
 @media(max-width:650px){
     .section__title{
         font-size: 21px;
@@ -312,7 +355,26 @@
         border-radius: 12px;
     }
 }
-
+@media(max-width:390px){
+    .section__title{
+        font-size: 17px;
+        margin: 12px 0;
+    }
+    .cards{
+        gap: 14px;
+    }
+    .card{
+        padding: 10px;
+    }
+    .card__title{
+        margin: 0 0 4px;
+        font-size: 15px;
+    }
+    .card__text{
+        line-height: 23px;
+        font-size: 13.5px;
+    }
+}
 /* 3 секция */
 .spec{
     display: flex;
@@ -353,7 +415,17 @@
         font-size: 14px;
     }
 }
-
+@media(max-width:390px){
+    .spec{
+        gap: 10px;
+    }
+    .spec__row{
+        padding: 10px 12px;
+    }
+    .spec__text{
+        font-size: 13.5px;
+    }
+}
 /* 4 секция */
 .eco__list{
     list-style: disc;

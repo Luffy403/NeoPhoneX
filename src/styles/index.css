@@ -90,4 +90,20 @@ a{
     .section{
         padding: 18px 0;
     }
+    .button{
+        padding: 6px;
+    }
+}
+@media(max-width:390px){
+    .container{
+        max-width: 340px;
+    }
+    .section{
+        padding: 15px 0;
+    }
+}
+@media(max-width:350px){
+    .container{
+        max-width: 300px;
+    }
 }
