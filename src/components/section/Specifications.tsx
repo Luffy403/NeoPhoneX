@@ -1,25 +1,29 @@
+import { SpecRow } from "../Card"
+import { SpanSpecText } from "../Span"
+import { H2Title } from "../Text"
+
 export function Specifications(){
     return (
         <section className="section" id="spec">
             <div className="container">
-                <h3 className="section__title">Технические характеристики</h3>
+                <H2Title text="Технические характеристики" />
                 <div className="spec">
-                    <div className="spec__row">
-                        <span className="spec__text">Экран</span>
-                        <span className="spec__text">6.1″, 2400×1080</span>
-                    </div>
-                    <div className="spec__row">
-                        <span className="spec__text">Камера</span>
-                        <span className="spec__text">50 Мп</span>
-                    </div>
-                    <div className="spec__row">
-                        <span className="spec__text">Память</span>
-                        <span className="spec__text">128 ГБ</span>
-                    </div>
-                    <div className="spec__row">
-                        <span className="spec__text">Батарея</span>
-                        <span className="spec__text">4500 мА·ч</span>
-                    </div>
+                    <SpecRow>
+                        <SpanSpecText text="Экран" />
+                        <SpanSpecText text="6.1″, 2400×1080" />
+                    </SpecRow>
+                    <SpecRow>
+                        <SpanSpecText text="Камера" />
+                        <SpanSpecText text="50 Мп" />
+                    </SpecRow>
+                    <SpecRow>
+                        <SpanSpecText text="Память" />
+                        <SpanSpecText text="128 ГБ" />
+                    </SpecRow>
+                    <SpecRow>
+                        <SpanSpecText text="Батарея" />
+                        <SpanSpecText text="4500 мА·ч" />
+                    </SpecRow>
                 </div>
             </div>
         </section>

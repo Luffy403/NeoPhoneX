@@ -1,15 +1,19 @@
+import { EcoItem } from "../Li";
+import { H2Title } from "../Text";
+import { EcoList } from "../Ul";
+
 export function Eco(){
     return (
         <section className="section" id="eco">
             <div className="container">
-                <h3 className="section__title">Эко - система Neo</h3>
-                <ul className="eco__list">
-                    <li className="eco__item">Фирменные приложения для повседневных задач и творчества.</li>
-                    <li className="eco__item">Синхронизация между устройствами и облачное резервирование.</li>
-                    <li className="eco__item">Быстрые обновления и расширяемые возможности.</li>
-                    <li className="eco__item">Минималистичный интерфейс без лишних шагов.</li>
-                    <li className="eco__item">Поддержка аксессуаров Neo для работы и отдыха.</li>
-                </ul>
+                <H2Title text="Эко - система Neo" />
+                <EcoList>
+                    <EcoItem title="Фирменные приложения для повседневных задач и творчества."/>
+                    <EcoItem title="Синхронизация между устройствами и облачное резервирование."/>
+                    <EcoItem title="Быстрые обновления и расширяемые возможности." />
+                    <EcoItem title="Минималистичный интерфейс без лишних шагов."/>
+                    <EcoItem title="Поддержка аксессуаров Neo для работы и отдыха."/>
+                </EcoList>
             </div>
         </section>
     )
