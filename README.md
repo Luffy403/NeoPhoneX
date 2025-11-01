@@ -1,1 +1,1 @@
-# First project React + TypeScript + Vitegit
+# First project React + TypeScript + Vite
